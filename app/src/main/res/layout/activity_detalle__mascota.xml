@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imagenperro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_dertalle">
+
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar"></include>
+
+
+
+    <ImageView
+        android:id="@+id/imgFotoD"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/Imagen"
+        app:srcCompat="@drawable/datos_de_perros" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombreD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgHuesoD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/Imagen"
+                    android:padding="@dimen/left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icons8_dog_bone_40"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvedadD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/left"
+                    android:textSize="@dimen/edad_descrip"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgHuesoD"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imgHueso1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/Imagen"
+                    android:padding="@dimen/left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgHuesoD"
+                    app:srcCompat="@drawable/icons8_dog_bone_40"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tvdescripcionD"
+                    android:layout_width="335dp"
+                    android:layout_height="173dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:padding="@dimen/left"
+                    android:textSize="@dimen/edad_descrip"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imgHueso1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvedadD"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvhuesoD"
+                    android:layout_width="1dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginLeft="148dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imgIconHueso"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imgIconHueso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.135"
+                    app:layout_constraintStart_toEndOf="@+id/tvhuesoD"
+                    app:layout_constraintStart_toStartOf="@+id/tvhuesoD"
+                    app:srcCompat="@drawable/icons8_dog_bone_100" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

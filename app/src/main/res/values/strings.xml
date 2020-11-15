@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mascotas Application</string>
+    <string name="Imagen">Imagen</string>
+    <string name="todo">TODO</string>
+    <string name="imgtodo">imagen</string>
+    <string name="favorito">Favorito</string>
+    <string name="action_add">añadir</string>
+    <string name="action_edit">editar</string>
+    <string name="action_settings">configuracion</string>
+    <string name="action_help">ayuda</string>
+    <string name="action_about">salir</string>
+</resources>
